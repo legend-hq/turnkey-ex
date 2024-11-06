@@ -4,7 +4,7 @@ defmodule Turnkey.MixProject do
   def project do
     [
       app: :turnkey,
-      version: "0.0.1-alpha1",
+      version: "0.0.1-alpha2",
       elixir: "~> 1.15",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
@@ -50,7 +50,7 @@ defmodule Turnkey.MixProject do
       {:cors_plug, "~> 3.0", except: [:prod]},
       {:corsica, "~> 2.1", except: [:prod]},
       {:elixir_uuid, "~> 1.2", except: [:prod]},
-      {:signet, "1.0.0-echo3"},
+      {:signet, "~> 1.1.0"},
       {:httpoison, "~> 2.2"},
       {:goth, "~> 1.4", except: [:prod]}
     ]
